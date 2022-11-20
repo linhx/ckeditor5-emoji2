@@ -1,0 +1,14 @@
+:root {
+	--display-emoji-size: 1.25em;
+}
+
+.ck-editor__main .em {
+	display: inline-block;
+	width: var(--display-emoji-size);
+	height: var(--display-emoji-size);
+	vertical-align: middle;
+	margin-top: -4px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}

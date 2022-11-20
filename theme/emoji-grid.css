@@ -1,0 +1,38 @@
+
+.emoji2.emoji2-grid__tiles {
+	display: grid;
+	grid-gap: 0;
+	align-content: flex-start;
+	grid-template-columns: repeat(15, minmax(0, 1fr));
+	width: calc(25px * 15);
+	height: calc(25px * 10);
+	overflow: auto;
+	overflow-y: overlay;
+	font-size: 18px;
+}
+.emoji2.emoji2-grid__tiles::-webkit-scrollbar {
+	display: none;
+}
+
+
+.emoji2.emoji2-grid__tiles > button {
+	width: 25px;
+	height: 25px;
+	min-width: 25px;
+	min-height: 25px;
+	padding: 0;
+	border: 0;
+	background-color: unset;
+	cursor: pointer;
+}
+
+.emoji2.emoji2-grid__tiles > button > img.em {
+	width: 25px;
+	height: 25px;
+	padding: 2px;
+	box-sizing: border-box;
+}
+
+.emoji2.emoji2-grid__tiles > button > img.em:hover {
+	background-color: antiquewhite;
+}

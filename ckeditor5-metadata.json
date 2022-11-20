@@ -1,0 +1,17 @@
+{
+	"plugins": [
+		{
+			"name": "Ckeditor emoji 2",
+			"className": "Emoji",
+			"description": "Adds custom emoji to the editor.",
+			"path": "src/emoji2.ts",
+			"uiComponents": [
+				{
+					"name": "emoji2",
+					"type": "Button",
+					"iconPath": "theme/icons/grining.svg"
+				}
+			]
+		}
+	]
+}
