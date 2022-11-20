@@ -1,4 +1,4 @@
-import { Emoji } from './constants';
+import { type Emoji } from './constants';
 
 export const groupPeople = 'p';
 export const groupActivity = 'a';

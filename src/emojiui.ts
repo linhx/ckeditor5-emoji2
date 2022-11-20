@@ -20,7 +20,7 @@ export default class EmojiUI extends Plugin {
 	private defaultGroup: string;
 
 	public static override get pluginName(): string {
-		return 'EmojiUI';
+		return 'Emoji2UI';
 	}
 	private _groups: Map<string, Array<Emoji>>;
 
@@ -30,7 +30,7 @@ export default class EmojiUI extends Plugin {
 		if ( !this._groups || this._groups.size === 0 ) {
 			throw 'Emoji2: missing config `groups`';
 		}
-		this.defaultGroup = this.editor.config.get( 'emoji2.defaultGroup' ) || this._groups?.keys().next().value;
+		this.defaultGroup = this.editor.config.get( 'emoji2.defaultGroup' ) || this._groups.keys().next().value;
 		this.classEmoji = this.editor.config.get( 'emoji2.class' ) || EMOJI_CLASS;
 	}
 
@@ -44,7 +44,7 @@ export default class EmojiUI extends Plugin {
 			const model = editor.model;
 
 			dropdownView.buttonView.set( {
-				label: t( 'Emoji plugin' ),
+				label: t( 'Emoji 2 plugin' ),
 				icon: ckeditor5Icon
 			} );
 

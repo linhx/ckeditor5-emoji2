@@ -101,7 +101,7 @@ ClassicEditor
 				'mergeTableCells'
 			]
 		}
-	} as  any )
+	} as any )
 	.then( editor => {
 		window.editor = editor;
 		CKEditorInspector.attach( editor );

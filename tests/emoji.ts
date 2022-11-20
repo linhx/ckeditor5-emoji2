@@ -12,7 +12,7 @@ interface Editor extends EditorWithUI, DataApi {}
 
 describe( 'Emoji', () => {
 	it( 'should be named', () => {
-		expect( Emoji2.pluginName ).to.equal( 'Emoji' );
+		expect( Emoji2.pluginName ).to.equal( 'Emoji2' );
 	} );
 
 	describe( 'init()', () => {
@@ -41,7 +41,7 @@ describe( 'Emoji', () => {
 		} );
 
 		it( 'should load Emoji', () => {
-			const emojiPlugin = editor.plugins.get( 'Emoji' );
+			const emojiPlugin = editor.plugins.get( 'Emoji2' );
 
 			expect( emojiPlugin ).to.be.an.instanceof( Emoji2 );
 		} );

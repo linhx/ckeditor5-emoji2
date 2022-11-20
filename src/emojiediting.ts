@@ -11,7 +11,7 @@ export default class EmojiEditing extends Plugin {
 		return [ Widget ];
 	}
 	public static override get pluginName(): string {
-		return 'EmojiEditing';
+		return 'Emoji2Editing';
 	}
 
 	public constructor( editor: Editor ) {
